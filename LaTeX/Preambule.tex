@@ -1,0 +1,57 @@
+\chapter{Préambule}
+\epigraph{Le chemin est long du projet à la chose.}{Molière}
+
+\section{Compilation du document}
+
+Un document \LaTeX peut se compiler au travers d'un IDE (TexSutdio, TeXMaker par exemple).
+Le répertoire de ce document contient également un Makefile qui permet de compiler simplement en ligne de commande. 
+La fabrication du glossaire et de l'index est prise en charge dans ce Makefile. 
+
+\section{Références internes}
+
+Les références internes sont des renvois vers des figures, des tableaux ou des sections du rapport.
+\LaTeX introduit un mécanisme simple pour établir ce genre de référence, via les commandes  \textsf{\textbackslash label} et \textsf{\textbackslash ref}. 
+La première sert à définir une ancre dans le document, la seconde à la citer.
+Voici par exemple une référence interne vers la section intitulée \textit{Approche Top-Down} (cf. section  \ref{sec:top-down}).
+Les figures  et les tableaux  sont référencés de la même la manière (cf. figure \ref{fig:gomboc} et tableau \ref{tab:exemple}). \index{Table} \index{Figure}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{Algorithmes} & \textbf{Performance (s)} & \textbf{Gain (dB)}\\
+\midrule
+Algorithme 1 & 0.0003262 & 0.562 \\
+Algorithme 2 & 0.0015681 & 0.910 \\
+Algorithme 3 & 0.0009271 & 0.296 \\
+\bottomrule
+\end{tabular}
+\caption{\label{tab:exemple}Performances et gains des algorithmes envisagés.}
+\end{table}
+
+\begin{figure}[h]
+\centering\includegraphics[scale=0.25]{Gomboc.jpg}
+\caption{\label{fig:gomboc}Gömböc : un objet homogène tridimensionnel mono-monostatique. (source : Wikipedia)}
+\end{figure}
+
+
+Pour insérer des entrées dans l'index, il suffit de déclarer des mots via la commande \textsf{\textbackslash index} comme suit\footnote{Évidemment, elle n'est pas visible dans le document pdf\dots Faites un tour à la fin du document !}. \index{Contexte du projet}
+
+Pour utiliser le glossaire, il faut définir les termes dans le fichier \textsf{glossaire.tex} en utilisant la commande \textsf{\textbackslash newacronym\{label\}\{abbrv\}\{full\}}. 
+Puis,  \textsf{\textbackslash gls\{label\}} permet de les utiliser dans le document. 
+
+
+Par exemple, les UVs 3.4 et 4.4 sont une initiation à l'\gls{IS}.
+
+
+\section{Références externes}
+
+Les références externes sont des documents numériques, des livres, des articles, des images ou des vidéos qui ne sont pas présents dans le rapport. 
+\LaTeX propose un mécanisme simple de citation.
+Pour plus de détails, vous pouvez consulter les références suivantes \cite{maguis2010redigez,desgraupes2003latex,bitouze2010latex} qui sont présentent à la médiathèque de l'ENSTA Bretagne, ou celle-ci directement sur le web \cite{openclassroomLaTeX}.  
+
+Pour citer des documents, il suffit d'appeler la commande \textsf{\textbackslash cite\{key\}} ainsi \cite{lamport1985i1}. 
+La clé de citation est celle qui référence l'ouvrage dans le fichier de bibliographie intitulé   \textsf{bibliographie.bib}.
+Ce fichier d'exemple contient tous les types de documents dont vous aurez besoin : livre, article de journal, références web,  rapport\dots 
+Une fois insérée et compilée, la citation devient un lien dans le fichier pdf, redirigeant ainsi directement vers le détail de l'ouvrage cité dans la bibliographie située à la fin du document.
+ 

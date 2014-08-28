@@ -1,0 +1,60 @@
+\ifglsentryexists{IS}{}%
+{%
+\gls@defglossaryentry{IS}%
+{%
+name={IS},%
+sort={IS},%
+type={main},%
+first={Ing\IeC {\'e}nierie Syst\IeC {\`e}me (IS)},%
+firstplural={Ing\IeC {\'e}nierie Syst\IeC {\`e}mes(ISs)},%
+text={IS},%
+plural={ISs},%
+description={Ingénierie Système},%
+descriptionplural={Ingénierie Système\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Ing\IeC {\'e}nierie Syst\IeC {\`e}me},%
+longplural={Ing\IeC {\'e}nierie Syst\IeC {\`e}mes},%
+short={IS},%
+shortplural={ISs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{computer}{}%
+{%
+\gls@defglossaryentry{computer}%
+{%
+name={computer},%
+sort={computer},%
+type={main},%
+first={computer},%
+firstplural={computers},%
+text={computer},%
+plural={computers},%
+description={is a programmable machine that receives input, stores and manipulates data, and provides output in a useful format},%
+descriptionplural={is a programmable machine that receives input, stores and manipulates data, and provides output in a useful format},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
