@@ -3,7 +3,15 @@
 
 ## Pourquoi ?
 
-Ce dépôt contient une base de rédaction pour les rapports des projets étudiants.
+Ce dépôt contient une base de rédaction pour les rapports des projets étudiants prête à être utilisée. 
+
+- page de garde
+- licence, 
+- index,
+- glossaire,
+- bibliographie,
+- couleurs ENSTA Bretagne officielles
+- ... et quelques explications succinctes au début
 
 
 ## Comment utiliser Report-Templates ?
